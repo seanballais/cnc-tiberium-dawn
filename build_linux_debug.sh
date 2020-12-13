@@ -19,6 +19,10 @@ fi
 if [ "$BUILD_ACTION_TYPE" = "full" ]
 then
     echo "[::] Performing a full build."
+    
+    echo "[::] Clearing CMake-related files."
+    rm -rf *
+
     echo "[::] Running Conan..."
     conan install -pr=$ROOT_DIR/conan_profiles/linux_debug.txt \
                   --build missing \

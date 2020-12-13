@@ -1,166 +1,166 @@
 cmake_minimum_required(VERSION 3.14)
 
 add_executable(cnc-td
-    aadata.cpp
-    abstract.cpp
-    adata.cpp
-    aircraft.cpp
-    alloc.cpp
-    anim.cpp
-    audio.cpp
-    base.cpp
-    bbdata.cpp
-    bdata.cpp
-    building.cpp
-    bullet.cpp
-    cargo.cpp
-    ccdde.cpp
-    ccfile.cpp
-    cdata.cpp
-    cdfile.cpp
-    cell.cpp
-    checkbox.cpp
-    cheklist.cpp
-    colrlist.cpp
-    combat.cpp
-    combuf.cpp
-    comqueue.cpp
-    confdlg.cpp
-    connect.cpp
-    conquer.cpp
-    const.cpp
-    control.cpp
-    coord.cpp
-    credits.cpp
-    crew.cpp
-    dde.cpp
-    debug.cpp
-    descdlg.cpp
-    dial8.cpp
-    dialog.cpp
-    display.cpp
-    dllinterface.cpp
-    dllinterfaceeditor.cpp
-    door.cpp
-    dpmi.cpp
-    drive.cpp
-    edit.cpp
-    ending.cpp
-    event.cpp
-    expand.cpp
-    facing.cpp
-    factory.cpp
-    field.cpp
-    findpath.cpp
-    flasher.cpp
-    fly.cpp
-    foot.cpp
-    fuse.cpp
-    gadget.cpp
-    gamedlg.cpp
-    gauge.cpp
-    globals.cpp
-    goptions.cpp
-    gscreen.cpp
-    hdata.cpp
-    heap.cpp
-    help.cpp
-    house.cpp
-    idata.cpp
-    infantry.cpp
-    ini.cpp
-    init.cpp
-    internet.cpp
-    interpal.cpp
-    intro.cpp
-    iomap.cpp
-    ioobj.cpp
-    ipx.cpp
-    ipx95.cpp
-    ipxaddr.cpp
-    ipxconn.cpp
-    ipxgconn.cpp
-    ipxmgr.cpp
-    jshell.cpp
-    keyframe.cpp
-    layer.cpp
-    link.cpp
-    list.cpp
-    loaddlg.cpp
-    logic.cpp
-    map.cpp
-    mapeddlg.cpp
-    mapedit.cpp
-    mapedplc.cpp
-    mapedsel.cpp
-    mapedtm.cpp
-    mapsel.cpp
-    menus.cpp
-    miscasm.cpp
-    mission.cpp
-    mixfile.cpp
-    monoc.cpp
-    mouse.cpp
-    mplayer.cpp
-    msgbox.cpp
-    msglist.cpp
-    netdlg.cpp
-    noseqcon.cpp
-    nullconn.cpp
-    nulldlg.cpp
-    nullmgr.cpp
-    object.cpp
-    odata.cpp
-    options.cpp
-    overlay.cpp
-    packet.cpp
-    power.cpp
-    profile.cpp
-    queue.cpp
-    radar.cpp
-    radio.cpp
-    rand.cpp
-    rawfile.cpp
-    reinf.cpp
-    rules.cpp
-    saveload.cpp
-    scenario.cpp
-    score.cpp
-    scroll.cpp
-    sdata.cpp
-    seqconn.cpp
-    shape.cpp
-    shapebtn.cpp
-    sidebar.cpp
-    sidebarglyphx.cpp
-    slider.cpp
-    smudge.cpp
-    sounddlg.cpp
-    special.cpp
+    # aadata.cpp
+    # abstract.cpp
+    # adata.cpp
+    # aircraft.cpp
+    # alloc.cpp
+    # anim.cpp
+    # audio.cpp
+    # base.cpp
+    # bbdata.cpp
+    # bdata.cpp
+    # building.cpp
+    # bullet.cpp
+    # cargo.cpp
+    # ccdde.cpp
+    # ccfile.cpp
+    # cdata.cpp
+    # cdfile.cpp
+    # cell.cpp
+    # checkbox.cpp
+    # cheklist.cpp
+    # colrlist.cpp
+    # combat.cpp
+    # combuf.cpp
+    # comqueue.cpp
+    # confdlg.cpp
+    # connect.cpp
+    # conquer.cpp
+    # const.cpp
+    # control.cpp
+    # coord.cpp
+    # credits.cpp
+    # crew.cpp
+    # dde.cpp
+    # debug.cpp
+    # descdlg.cpp
+    # dial8.cpp
+    # dialog.cpp
+    # display.cpp
+    # dllinterface.cpp
+    # dllinterfaceeditor.cpp
+    # door.cpp
+    # dpmi.cpp
+    # drive.cpp
+    # edit.cpp
+    # ending.cpp
+    # event.cpp
+    # expand.cpp
+    # facing.cpp
+    # factory.cpp
+    # field.cpp
+    # findpath.cpp
+    # flasher.cpp
+    # fly.cpp
+    # foot.cpp
+    # fuse.cpp
+    # gadget.cpp
+    # gamedlg.cpp
+    # gauge.cpp
+    # globals.cpp
+    # goptions.cpp
+    # gscreen.cpp
+    # hdata.cpp
+    # heap.cpp
+    # help.cpp
+    # house.cpp
+    # idata.cpp
+    # infantry.cpp
+    # ini.cpp
+    # init.cpp
+    # internet.cpp
+    # interpal.cpp
+    # intro.cpp
+    # iomap.cpp
+    # ioobj.cpp
+    # ipx.cpp
+    # ipx95.cpp
+    # ipxaddr.cpp
+    # ipxconn.cpp
+    # ipxgconn.cpp
+    # ipxmgr.cpp
+    # jshell.cpp
+    # keyframe.cpp
+    # layer.cpp
+    # link.cpp
+    # list.cpp
+    # loaddlg.cpp
+    # logic.cpp
+    # map.cpp
+    # mapeddlg.cpp
+    # mapedit.cpp
+    # mapedplc.cpp
+    # mapedsel.cpp
+    # mapedtm.cpp
+    # mapsel.cpp
+    # menus.cpp
+    # miscasm.cpp
+    # mission.cpp
+    # mixfile.cpp
+    # monoc.cpp
+    # mouse.cpp
+    # mplayer.cpp
+    # msgbox.cpp
+    # msglist.cpp
+    # netdlg.cpp
+    # noseqcon.cpp
+    # nullconn.cpp
+    # nulldlg.cpp
+    # nullmgr.cpp
+    # object.cpp
+    # odata.cpp
+    # options.cpp
+    # overlay.cpp
+    # packet.cpp
+    # power.cpp
+    # profile.cpp
+    # queue.cpp
+    # radar.cpp
+    # radio.cpp
+    # rand.cpp
+    # rawfile.cpp
+    # reinf.cpp
+    # rules.cpp
+    # saveload.cpp
+    # scenario.cpp
+    # score.cpp
+    # scroll.cpp
+    # sdata.cpp
+    # seqconn.cpp
+    # shape.cpp
+    # shapebtn.cpp
+    # sidebar.cpp
+    # sidebarglyphx.cpp
+    # slider.cpp
+    # smudge.cpp
+    # sounddlg.cpp
+    # special.cpp
     startup.cpp
-    stats.cpp
-    super.cpp
-    tab.cpp
-    tarcom.cpp
-    target.cpp
-    tcpip.cpp
-    tdata.cpp
-    team.cpp
-    teamtype.cpp
-    techno.cpp
-    template.cpp
-    terrain.cpp
-    textbtn.cpp
-    theme.cpp
-    toggle.cpp
-    trigger.cpp
-    turret.cpp
-    txtlabel.cpp
-    udata.cpp
-    unit.cpp
-    utracker.cpp
-    vector.cpp
-    visudlg.cpp
-    win32lib/DrawMisc.cpp
-    winstub.cpp
+    # stats.cpp
+    # super.cpp
+    # tab.cpp
+    # tarcom.cpp
+    # target.cpp
+    # tcpip.cpp
+    # tdata.cpp
+    # team.cpp
+    # teamtype.cpp
+    # techno.cpp
+    # template.cpp
+    # terrain.cpp
+    # textbtn.cpp
+    # theme.cpp
+    # toggle.cpp
+    # trigger.cpp
+    # turret.cpp
+    # txtlabel.cpp
+    # udata.cpp
+    # unit.cpp
+    # utracker.cpp
+    # vector.cpp
+    # visudlg.cpp
+    # win32lib/DrawMisc.cpp
+    # winstub.cpp
 )

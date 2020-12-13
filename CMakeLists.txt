@@ -29,4 +29,3 @@ add_subdirectory(src)
 target_link_libraries(cnc-td
     ${CONAN_LIBS}
 )
-
