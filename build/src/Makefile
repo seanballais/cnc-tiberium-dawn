@@ -171,6 +171,33 @@ startup.cpp.s:
 	cd /home/seanballais/Code/Projects/cnc-tiberium-dawn/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/cnc-td.dir/build.make src/CMakeFiles/cnc-td.dir/startup.cpp.s
 .PHONY : startup.cpp.s
 
+winstub.o: winstub.cpp.o
+
+.PHONY : winstub.o
+
+# target to build an object file
+winstub.cpp.o:
+	cd /home/seanballais/Code/Projects/cnc-tiberium-dawn/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/cnc-td.dir/build.make src/CMakeFiles/cnc-td.dir/winstub.cpp.o
+.PHONY : winstub.cpp.o
+
+winstub.i: winstub.cpp.i
+
+.PHONY : winstub.i
+
+# target to preprocess a source file
+winstub.cpp.i:
+	cd /home/seanballais/Code/Projects/cnc-tiberium-dawn/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/cnc-td.dir/build.make src/CMakeFiles/cnc-td.dir/winstub.cpp.i
+.PHONY : winstub.cpp.i
+
+winstub.s: winstub.cpp.s
+
+.PHONY : winstub.s
+
+# target to generate assembly for a file
+winstub.cpp.s:
+	cd /home/seanballais/Code/Projects/cnc-tiberium-dawn/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/cnc-td.dir/build.make src/CMakeFiles/cnc-td.dir/winstub.cpp.s
+.PHONY : winstub.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -183,6 +210,9 @@ help:
 	@echo "... startup.o"
 	@echo "... startup.i"
 	@echo "... startup.s"
+	@echo "... winstub.o"
+	@echo "... winstub.i"
+	@echo "... winstub.s"
 .PHONY : help
 
 

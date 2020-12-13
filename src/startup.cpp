@@ -37,6 +37,10 @@
 
 #include "utils.hpp"
 
+// TEMPORARY definition for CCDebugString() while most of the code have not been
+// ported yet.
+void CCDebugString (const char *string);
+
 // bool Read_Private_Config_Struct(char *profile, NewConfigType *config);
 // void Delete_Swap_Files(void);
 // void Print_Error_End_Exit(char *string);
@@ -117,19 +121,13 @@
 // 	return true;
 // }
 
-
-//int PASCAL WinMain ( HINSTANCE instance , HINSTANCE , char * command_line , int command_show )
-//{
-// Heap_Dump_Check( "first thing in main" );
-//	malloc(1);
-
 int main(int argc, char* argv[])
 {
 	// int command_show = SW_HIDE;
 	// HINSTANCE instance = ProgramInstance;
 	// char command_line[1024];
 	// strcpy(command_line, command_line_in);
-	// CCDebugString ("C&C95 - Starting up.\n");
+	CCDebugString ("C&C95 - Starting up.\n");
 	STUBBED("Use a logger.");
 
 	/*
@@ -203,12 +201,12 @@ int main(int argc, char* argv[])
 			// Read_Setup_Options( &cfile );
 			STUBBED("Read setup data from CONQUER.INI.");
 
-			// CCDebugString ("C&C95 - Creating main window.\n");
+			CCDebugString("C&C95 - Creating main window.\n");
 
 			// Create_Main_Window( instance , command_show , ScreenWidth , ScreenHeight );
 			STUBBED("Create a window.");
 
-			// CCDebugString ("C&C95 - Initialising audio.\n");
+			CCDebugString("C&C95 - Initialising audio.\n");
 
 			// SoundOn = Audio_Init ( MainWindow , 16 , false , 11025*2 , 0 );
 			STUBBED("Initialize audio subsystem.");
@@ -216,7 +214,7 @@ int main(int argc, char* argv[])
 			// Palette = new(MEM_CLEAR) unsigned char[768];
 
 			// BOOL video_success = FALSE;
-			// CCDebugString ("C&C95 - Setting video mode.\n");
+			CCDebugString("C&C95 - Setting video mode.\n");
 			// /*
 			// ** Set 640x400 video mode. If its not available then try for 640x480
 			// */
@@ -244,7 +242,7 @@ int main(int argc, char* argv[])
 			// }
 			STUBBED("Set-up video subsystem.");
 
-			// CCDebugString ("C&C95 - Initialising video surfaces.\n");
+			CCDebugString("C&C95 - Initialising video surfaces.\n");
 
 			// if (ScreenWidth==320){
 			// 	VisiblePage.Init( ScreenWidth , ScreenHeight , NULL , 0 , (GBC_Enum)0);
@@ -264,11 +262,11 @@ int main(int argc, char* argv[])
 			// }
 			STUBBED("Initialize video surfaces.");
 
-			// CCDebugString ("C&C95 - Adjusting variables for resolution.\n");
+			CCDebugString("C&C95 - Adjusting variables for resolution.\n");
 			// Options.Adjust_Variables_For_Resolution();
 			STUBBED("Adjust variables for resolution.");
 
-			// CCDebugString ("C&C95 - Setting palette.\n");
+			CCDebugString("C&C95 - Setting palette.\n");
 			/////////Set_Palette(Palette);
 			STUBBED("Set-up palette.");
 
@@ -287,7 +285,7 @@ int main(int argc, char* argv[])
 			// we're using SDL 2 here, so no need to directly access MMX
 			// functionality.
 
-// 			CCDebugString ("C&C95 - Creating mouse class.\n");
+ 			CCDebugString("C&C95 - Creating mouse class.\n");
 // 			WWMouse = new WWMouseClass(&SeenBuff, 32, 32);
 // //			MouseInstalled = Install_Mouse(32,24,320,200);
 // 			MouseInstalled = TRUE;
@@ -296,7 +294,7 @@ int main(int argc, char* argv[])
 			/*
 			** See if we should run the intro
 			*/
-			// CCDebugString ("C&C95 - Reading CONQUER.INI.\n");
+			CCDebugString ("C&C95 - Reading CONQUER.INI.\n");
 			// char *buffer = (char*)Alloc(64000 , MEM_NORMAL);		//(char *)HidPage.Get_Buffer();
 			// cfile.Read(buffer, cfile.Size());
 			// buffer[cfile.Size()] = '\0';
@@ -352,7 +350,7 @@ int main(int argc, char* argv[])
 			// Memory_Error_Exit = Print_Error_End_Exit;
 			STUBBED("Set memory error exit function.");
 
-			// CCDebugString ("C&C95 - Entering main game.\n");
+			CCDebugString("C&C95 - Entering main game.\n");
 			// Main_Game(argc, argv);
 			STUBBED("Run main game.");
 
@@ -364,7 +362,7 @@ int main(int argc, char* argv[])
 			// Memory_Error_Exit = Print_Error_Exit;
 			STUBBED("Set memory error exit function.");
 
-			// CCDebugString ("C&C95 - About to exit.\n");
+			CCDebugString("C&C95 - About to exit.\n");
 			// ReadyToQuit = 1;
 
 			// PostMessage(MainWindow, WM_DESTROY, 0, 0);

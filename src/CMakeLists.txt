@@ -162,5 +162,5 @@ add_executable(cnc-td
     # vector.cpp
     # visudlg.cpp
     # win32lib/DrawMisc.cpp
-    # winstub.cpp
+    winstub.cpp
 )
