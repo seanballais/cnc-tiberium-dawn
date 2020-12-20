@@ -550,7 +550,7 @@ BOOL Any_Locked (void)
 
 
 HANDLE DebugFile = INVALID_HANDLE_VALUE;
-
+#endif
 /***********************************************************************************************
  * CCDebugString -- sends a string to the debugger and echos it to disk                        *
  *                                                                                             *
@@ -565,7 +565,6 @@ HANDLE DebugFile = INVALID_HANDLE_VALUE;
  * HISTORY:                                                                                    *
  *    10/28/96 12:48PM ST : Created                                                            *
  *=============================================================================================*/
-#endif
 void CCDebugString (const char *string)
 {
 	// We could have spdlog target OutputDebugString() when in Windows, if we
